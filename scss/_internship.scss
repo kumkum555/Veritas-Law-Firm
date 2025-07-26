@@ -1,0 +1,120 @@
+.internship-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  gap: 2rem;
+  padding: 4rem 2rem;
+
+  .content {
+    flex: 1;
+    max-width: 50%;
+
+    .icon{
+      padding-right: 40%;
+      
+    }
+
+    .subheading {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      color: #b88d59;
+      letter-spacing: 1px;
+      padding-bottom: 1rem;
+      padding-left: 25%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      padding-left: 25%;
+      color: #030000;
+      font-family: marcellus;
+      font-weight: 100;
+      margin-bottom: 1.5rem;
+    }
+
+    .description {
+      font-size: 20px;
+      color: #667c99;
+      font-weight: 200;
+      margin-bottom: 1.5rem;
+      padding-left: 25%;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #333;
+      padding-left: 25%;
+      padding-top: 50px;
+    }
+
+    span {
+      display: inline-block;
+      padding-left: 25%;
+      margin-bottom: 1rem;
+
+      a {
+        color: #bf9874;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
+
+      i {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .image {
+    flex: 1;
+    max-width: 50%;
+    height: 100vh; // Full section height
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // fills area without distortion
+      border-radius: 0;
+    }
+  }
+
+  // ✅ Responsive media query
+  @media (max-width: 992px) {
+    flex-direction: column;
+
+    .content,
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content {
+      .subheading,
+      h1,
+      .description,
+      p,
+      span {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    .image {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

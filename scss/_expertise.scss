@@ -1,0 +1,273 @@
+.expertise-section {
+  position: relative;
+  background: url('/images/other/bgimg2.webp') no-repeat right bottom;
+  background-blend-mode: overlay;
+  background-color: #001025;
+  color: #fff;
+  padding: 4rem 2rem;
+  background-size: 35%;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow-y: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 350px;
+    width: 300px;
+    height: 25%;
+    background: url('/images/icone/signature2.svg') no-repeat right;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .top-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+
+    .intro-img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 6px;
+      
+    }
+
+    .dropcap-paragraph {
+      font-family: 'Marcellus', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #fff;
+      padding-right: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+
+      .dropcap {
+        float: left;
+        font-size: 100px;
+        line-height: 1;
+        font-weight: 400;
+        font-family: 'Marcellus';
+        margin-right: 15px;
+        color: #c89b6e;
+      }
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+
+    .section-title {
+      font-family: 'Marcellus';
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: #c89b6e;
+      text-align: center;
+      padding-right: 5%;
+      padding-top: 2%;
+    }
+
+    .expertise-heading {
+      padding-top: 15%;
+    }
+
+    .expertise-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #bf9874;
+      padding-bottom: 1rem;
+      padding-top: 10%;
+
+      h5 {
+        font-size: 1.1rem;
+        margin-bottom: 0.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin: 0;
+        opacity: 0.7;
+      }
+
+      .learn-more {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        color: #f3f2f1;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.stats-section {
+  background: #1e2337;
+  padding: 3rem 0;
+  color: #fff;
+
+  .stats-item {
+    position: relative;
+
+    .number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #c58c6b;
+      margin-bottom: 0.5rem;
+    }
+
+    .line {
+      display: block;
+      height: 40px;
+      width: 1px;
+      background-color: #c58c6b;
+      margin: 0 auto 0.5rem auto;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      color: #e0e0e0;
+    }
+  }
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 1024px) {
+  .expertise-section {
+    background-size: 50%;
+
+    &::after {
+      right: 150px;
+      width: 250px;
+    }
+
+    .top-section {
+      .dropcap-paragraph {
+        padding-right: 1rem;
+      }
+
+      .section-title {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .expertise-section {
+    background-position: center bottom;
+    background-size: cover;
+    padding: 3rem 1rem;
+
+    &::after {
+      display: none !important;
+    }
+
+    .top-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .intro-img {
+        max-width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      .dropcap-paragraph {
+        margin-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+
+        .dropcap {
+          float: none;
+          display: block;
+          font-size: 60px;
+          margin: 0 auto 1rem;
+        }
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .expertise-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  .stats-section {
+    .stats-item {
+      margin-bottom: 2rem;
+
+      .number {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .expertise-section {
+    .top-section {
+      .dropcap-paragraph {
+        font-size: 14px;
+        line-height: 1.5;
+
+        .dropcap {
+          font-size: 50px;
+        }
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .expertise-item {
+        h5 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  .stats-section {
+    .stats-item {
+      .number {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}

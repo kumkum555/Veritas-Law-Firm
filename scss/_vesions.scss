@@ -1,0 +1,76 @@
+.vesions-section {
+  padding: 80px 20px;
+  background-color: #eaf1fa;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .heading {
+    margin-bottom: 50px;
+
+    .title-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      
+
+      h1 {
+        font-size: 2.8rem;
+        color: #0d1b2a;
+        font-family: 'Times New Roman', serif;
+      }
+
+      .line-left,
+      .line-right {
+        width: 30px;
+        height: auto;
+      }
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      margin-top: 15px;
+      color: #b88b58;
+      letter-spacing: 2px;
+    }
+  }
+
+}
+.blog-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  .blog-item {
+    width: 30%;
+    background: #eaf1fa;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .card-body {
+    padding: 1rem;
+
+    .meta {
+      font-size: 20px;
+      color: #667c99;
+      font-weight: 400;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin: 0.5rem 0;
+      color: #070707;
+      font-weight: bold;
+    }
+
+    a {
+      color: #070707;
+      text-decoration: none;
+    
+    }
+  }
+}

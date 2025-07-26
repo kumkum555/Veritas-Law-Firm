@@ -1,0 +1,80 @@
+.inquiry-section {
+  padding: 5rem 1rem;
+  background: url('/images/other/bgimg2.webp') no-repeat right center;
+  background-size:cover;
+  background-color: #ffff;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    color: #000;
+  }
+
+  .subtitle {
+    color: #bf9874;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+  }
+
+  .form-control,
+  .form-select {
+    border: none;
+    border-bottom: 2px solid #bf9874;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0.75rem 0;
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    border-radius: 0;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    margin-top: 2rem;
+  }
+
+  // Optional: Light overlay for readability (you can remove this if not needed)
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.85); // white overlay
+    z-index: -1;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #000 !important;
+  opacity: 1;
+}
+
+input,
+textarea {
+  color: #000;
+}
+
+select option[disabled] {
+  color: #000 !important;
+}
+
+select.form-select {
+  color: #000;
+}
+
+select.form-select option[disabled] {
+  color: #000 !important;
+}

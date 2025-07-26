@@ -1,0 +1,22 @@
+.stats-section{
+  background-color: #1b314b;
+  padding-top: 0%;
+}
+.stats-item {
+  text-align: center;
+  display: flex;
+
+  
+}
+
+.stats-item .number {
+  padding-top: 10%;
+  margin-bottom: 8px; 
+  font-size: 5rem;
+}
+
+.stats-item p {
+  margin: 0;
+  font-size: 1rem;
+  padding-top: 15%;
+}

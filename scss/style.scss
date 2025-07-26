@@ -1,0 +1,84 @@
+$primary: #001025;
+$accent: #bf9874;
+$body-color: #ffffff; 
+$heading-light: #f3ecec; 
+$heading-dark: #e4e5e7; 
+
+$custom_theme_colors: (
+  "accent": $accent,
+  "primary": $primary,
+  "body-color": $body-color,
+  "heading-light": $heading-light,
+  "heading-dark": $heading-dark,
+);
+
+$custom-container-max-widths: (
+    xl: 1200px,
+    xxl: 1350px
+);
+
+
+$font-family-base: "Marcellus", Archivo;
+$headings-color: #d4d1d1;
+$nav-link-font-weight: 400;
+
+$font-size-base: 1rem;
+
+
+$h1-font-size: min(72px, calc($font-size-base + 4.5vw)); 
+$h2-font-size: $font-size-base * 2.25; 
+$h3-font-size: $font-size-base * 1.5; 
+$h4-font-size: $font-size-base * 1.25; 
+$h5-font-size: $font-size-base * 1.125; 
+$h6-font-size: $font-size-base ; 
+
+
+
+$spacer: 1rem; // Base unit (16px typically)
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,  // 0.25rem (4px)
+  2: $spacer * 0.5,   // 0.5rem (8px)
+  3: $spacer,         // 1rem (16px)
+  4: $spacer * 1.5,   // 1.5rem (24px)
+  5: $spacer * 3      // 3rem (48px)
+);
+
+
+$card-radius: 2px;
+
+
+
+
+
+
+@import '../node_modules/bootstrap//scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$container-max-widths: map-merge($map1: $container-max-widths, $map2: $custom-container-max-widths);
+$theme_colors: map-merge($map1: $theme_colors, $map2: $custom_theme_colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './navbar';
+@import './banner';
+@import './heritage';
+@import './interviewsection.scss';
+@import './expertise.scss';
+@import './stats';
+@import './meeting';
+@import './attorney';
+@import './expert';
+@import './vesions';
+@import './internship';
+@import './location';
+@import './testimonial';
+@import './inquirey';
+@import './footer';
+@import './siteend';
+ 
+
+a{
+  color: #829BBC;
+  text-decoration: none;
+}

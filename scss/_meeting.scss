@@ -1,0 +1,166 @@
+.meeting-section {
+  background-image: url('/images/other/meetingbgimg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+  }
+
+  .meeting-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 1rem;
+
+    .meeting-heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: 'Georgia', serif;
+      color: #fff;
+
+      @media (min-width: 576px) {
+        font-size: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 2.5rem;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .accordion-item {
+    border: none;
+    border-bottom: 3px solid #bf9874;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-button {
+    background-color: transparent;
+    font-weight: 600;
+    color: #000;
+    text-align: left;
+    font-size: 1rem;
+    padding: 1rem;
+
+    &::after {
+      transition: transform 0.3s ease;
+    }
+
+    &:not(.collapsed)::after {
+      transform: rotate(180deg);
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 0.95rem;
+      padding: 0.75rem;
+    }
+  }
+
+  .accordion-body {
+    color: #333;
+    font-size: 1rem;
+
+    @media (max-width: 576px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  h1.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 3rem;
+    }
+  }
+
+  .section-title {
+    color: #bf9874;
+    font-size: 1.2rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// ANSWER SECTION
+.answer-section {
+  background-color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+
+  h1 {
+    font-family: 'Marcellus', serif;
+    font-size: 2rem;
+    color: #0a0a0a;
+    margin-bottom: 1rem;
+
+    @media (min-width: 576px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    color: #a1885f;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 576px) {
+      font-size: 1.2rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .accordion-button {
+    font-weight: 600;
+    font-size: 1rem;
+
+    &:not(.collapsed) {
+      background-color: #f7f7f7;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 0.95rem;
+    }
+  }
+}

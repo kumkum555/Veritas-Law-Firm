@@ -1,0 +1,112 @@
+.experts-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #001025;
+}
+
+.section-subtitle {
+  color: #bf9874;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  margin-top: 5%;
+  padding-right: 53%;
+  font-family: 'archivo';
+}
+
+.section-title {
+  font-size: 4rem;
+  margin-bottom: 5%;
+  letter-spacing: 1px;
+  padding-right: 37%;
+}
+
+.experts-grid {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+}
+
+.expert-card {
+  background-color: transparent;
+  width: 270px;
+  
+}
+
+.expert-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.expert-card h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.expert-card p {
+  font-size: 1.3rem;
+  color: #829bbc;
+  text-align: left;
+  padding-bottom:20%;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .experts-section {
+    .section-subtitle,
+    .section-title {
+      padding-right: 0;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 3rem;
+    }
+
+    .experts-grid {
+      gap: 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experts-section {
+    padding: 40px 15px;
+
+    .section-title {
+      font-size: 2.5rem;
+    }
+
+    .expert-card {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .experts-section {
+    .section-subtitle {
+      font-size: 1.2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .expert-card h4 {
+      font-size: 1.2rem;
+    }
+
+    .expert-card p {
+      font-size: 1rem;
+    }
+  }
+}
