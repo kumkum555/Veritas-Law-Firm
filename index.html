@@ -8,35 +8,32 @@
   <link rel="icon" href="/img/Vector.svg" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  import Accordion from 'react-bootstrap/Accordion';
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/css/style.min.css">
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">
-    <div class="container-fluid px-4" style="max-width: 1920px;  color: #bf9874;">
-
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
+    <div class="container-fluid px-4" style="max-width: 1920px; color: #bf9874;">
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="/images/icone/logo.svg" alt="logo" height="100%">
       </a>
-
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <div class="collapse navbar-collapse mt-lg-0" id="navbarNav">
+        <div class="border-start border-2 border-accent w-100">
 
-      <div class="collapse navbar-collapse  mt-lg-0" id="navbarNav">
-        <div class="border-start border-2  border-accent w-100 ">
-
-
+          <!-- Contact info row -->
           <div class="d-none d-lg-flex justify-content-between mb-3 border-bottom border-2 pb-3 border-accent">
-            <div class="d-flex gap-4 px-3 fs-6 text-black ">
-              <div><i class="bi bi-telephone me-1 " style="color: #bf9874;"></i> +383 (21) 23 43984</div>
+            <div class="d-flex gap-4 px-3 fs-6 text-black">
+              <div><i class="bi bi-telephone me-1" style="color: #bf9874;"></i> +383 (21) 23 43984</div>
               <div><i class="bi bi-clock me-1" style="color: #bf9874;"></i> MON - FRI 7:30AM - 6:30PM</div>
             </div>
             <div class="text-uppercase" style="color: #bf9874;">
@@ -46,7 +43,7 @@
             </div>
           </div>
 
-
+          <!-- Navigation links -->
           <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between w-100">
             <ul class="navbar-nav text-uppercase flex-wrap justify-content-center mb-3 mb-lg-0 me-lg-auto">
               <li class="nav-item">
@@ -68,37 +65,67 @@
               </li>
               <li class="nav-item"><a href="#" class="nav-link px-3 text-black">Contact</a></li>
             </ul>
+
             <div class="text-center text-lg-end">
               <a href="#" class="btn btn-outline-dark no-radius">Free Consultation</a>
             </div>
 
           </div>
         </div>
-
       </div>
     </div>
-
   </nav>
 
 
-  <section class="hero-section">
-    <img src="/images/other/heroimg.webp" alt="Lawyer" class="hero-bg" />
-    <div class="hero-content">
-      <div class="hero-text">
-        <h5 style="color: #bf9874;">HOME OF LAW & ORDER</h5>
+  <section id="heroCarousel" class="carousel slide hero-section " data-bs-ride="carousel">
+    <div class="carousel-inner">
 
-        <h1 class="text-white">EXPERTS OF JUSTICE</h1>
-        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis, corporis facere, tenetur officia ab
-          aliquid quos soluta ratione accusamus eum vero blanditiis nemo? Deleniti rem ipsa voluptatum iusto, officiis
-          sed cumque ipsum inventore eligendi vero qui, aut perspiciatis alias.</P>
-
-        <a href="#" class="btn-primary">FIND OUR MORE </a>
-        <div>
-          <img src="/images/icone/icon2.svg" alt="icon">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="/images/other/heroimg.webp" class="d-block w-100 hero-bg" alt="Lawyer">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100 px-5">
+          <h5 style="color: #bf9874;">HOME OF LAW & ORDER</h5>
+          <h1 class="text-white">EXPERTS OF JUSTICE</h1>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quis, corporis facere, tenetur officia ab
+            aliquid quos soluta ratione accusamus eum vero blanditiis nemo?
+          </p>
+          <div class="mt-5">
+            <a href="#" class="btn btn-primary">CONTACT US</a>
+            <img src="/images/icone/icon2.svg" alt="icon" class="mt-3">
+          </div>
         </div>
       </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="/images/other/heroimg.webp" class="d-block w-100 hero-bg " alt="Lawyer">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-start text-start h-100 px-5">
+          <h5 style="color: #bf9874;">YOUR LEGAL PARTNER</h5>
+          <h1 class="text-white">JUSTICE FOR EVERYONE</h1>
+          <p class="text-white">
+            Deleniti rem ipsa voluptatum iusto, officiis sed cumque ipsum inventore eligendi vero qui, aut perspiciatis
+            alias.
+          </p>
+          <div class="">
+            <a href="#" class="btn btn-primary">CONTACT US</a>
+            <img src="/images/icone/icon2.svg" alt="icon" class="mt-3">
+          </div>
+
+        </div>
+      </div>
+
     </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </section>
+
 
   <div class="info-section">
     <div class="container info-container">
@@ -106,7 +133,7 @@
 
         <div class="col-md-4 col-12 mb-4">
           <div class="info-box d-flex align-items-center gap-3">
-            <img src="/images/other/lawfirm1.svg" alt="Icon 1" class="info-img">
+            <img src="/images/other/lawfirm1.svg" alt="Icon 1" class="info-img" style="max-width:60%;">
             <div>
               <h5>BEST LAW FIRM</h5>
               <p>45 Years of Experience</p>
@@ -116,7 +143,7 @@
 
         <div class="col-md-4 col-12 mb-4">
           <div class="info-box d-flex align-items-center gap-3">
-            <img src="/images/other/lawfirm2.svg" alt="Icon 2" class="info-img">
+            <img src="/images/other/lawfirm2.svg" alt="Icon 2" class="info-img" style="max-width:38%;">
             <div>
               <h5>EXPERT LAWYERS</h5>
               <p>Qualified & Professional</p>
@@ -124,9 +151,9 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-12 mb-4">
+        <div class="col-md-4 col-12 mb-4 ">
           <div class="info-box d-flex align-items-center gap-3">
-            <img src="/images/other/lawfirm3.svg" alt="Icon 3" class="info-img">
+            <img src="/images/other/lawfirm3.svg" alt="Icon 3" class="info-img" style="max-width: 36%;">
             <div>
               <h5>LEGAL SUPPORT</h5>
               <p>Always at your service</p>
@@ -138,13 +165,14 @@
     </div>
   </div>
 
-  <section class="video-section py-5 text-center position-relative">
+  <section class="video-heritage-section py-5 text-center position-relative">
     <div class="container position-relative">
+
 
       <img src="/images/other/backgroundimg.svg" alt="Background" class="world-map-bg">
 
 
-      <div class="video-wrapper mx-auto position-relative">
+      <div class="video-wrapper mx-auto mb-5">
         <div class="ratio ratio-16x9">
           <iframe src="https://www.youtube.com/embed/6v7oqf_Sy5U?autoplay=1&mute=1&rel=0"
             title="First Lawyer‑Client Meeting Advice"
@@ -153,17 +181,9 @@
         </div>
       </div>
 
-
-    </div>
-  </section>
-
-
-
-
-  <section class="heritage-section py-5">
-    <div class="container text-center">
-      <h1 class=" text-black display-7">OUR HERITAGE</h1>
-      <p class="text-uppercase fw-semibold mb-5" style="letter-spacing: 2px;  color: #bf9874;">Our Past & Our Future</p>
+      <!-- OUR HERITAGE Timeline -->
+      <h1 class="text-black display-7">OUR HERITAGE</h1>
+      <p class="text-uppercase fw-semibold mb-5" style="letter-spacing: 2px; color: #bf9874;">Our Past & Our Future</p>
 
       <div class="timeline-container position-relative">
         <div class="timeline-line"></div>
@@ -171,7 +191,7 @@
         <div class="timeline-item left">
           <div class="content">
             <h6 class="fw-bold text-black">Founded in Hawaii</h6>
-            <p class="small text-black ">Nisi iaculis aliquam tortor malesuada pellentesque.</p>
+            <p class="small text-black">Nisi iaculis aliquam tortor malesuada pellentesque.</p>
           </div>
           <div class="timeline-dot"></div>
           <p class="year">1968</p>
@@ -217,6 +237,7 @@
   </section>
 
 
+
   <section class="interview-section">
     <div class="interview-image">
       <img src="/images/other/interview.svg" alt="Interview Image" />
@@ -260,10 +281,10 @@
         </div>
         <div class="expertise-heading d-flex align-items-center justify-content-center gap-3">
           <img src="/images/icone/icon3.svg" alt="line left" class="icon-left">
-          <h2 class="text-center m-0">FIELDS OF EXPERTISE</h2>
+          <h1 class="text-center ">FIELDS OF EXPERTISE</h1>
           <img src="/images/icone/icon4.svg" alt="line right" class="icon-right">
         </div>
-        <p class="section-subtitle text-center mb-5">VISION MAKES US WHO WE ARE</p>
+        <p class="section-subtitle text-center ">VISION MAKES US WHO WE ARE</p>
 
         <div class="row">
 
@@ -375,7 +396,7 @@
       <div class="row justify-content-center">
 
         <div class="col-12">
-          <h1 class="meeting-heading text-black">WE ARE OPEN FOR MEETING EVERY</h1>
+          <h1 class="meeting-heading ">WE ARE OPEN FOR MEETING EVERY</h1>
         </div>
 
         <div class="col-12">
@@ -409,76 +430,81 @@
 
 
 
-  <div class="container pb-5">
-    <div class="accordion accordion-flush pb-5 px-3" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header border-top border-bottom border-3 border-accent">
-          <button class="accordion-button collapsed text-primary  justify-content-center" type="button"
+  <div class="container py-5">
+    <div class="accordion accordion-flush shadow-sm" id="accordionFlushExample">
+
+      <div class="accordion-item border-start border-end border-bottom border-2 border-accent">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed justify-content-center text-primary fw-bold" type="button"
             data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
             aria-controls="flush-collapseOne">
             HOW CAN WE HELP YOU?
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            <code>Placeholder content for this accordion, which is intended to demonstrate the class. This is the first item’s accordion body.</code>
+          <div class="accordion-body text-center mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum nobis provident temporibus
+            blanditiis sunt optio dicta nihil culpa, veniam praesentium nemo impedit soluta assumenda tempore veritatis
+            cumque exercitationem reiciendis!
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header border-bottom border-3 border-accent">
-          <button class="accordion-button collapsed text-primary  justify-content-center" type="button"
+      <div class="accordion-item border-start border-end border-bottom border-2 border-accent">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed justify-content-center text-primary fw-bold" type="button"
             data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
             aria-controls="flush-collapseTwo">
             LEGAL AND LAW ADVICES.
           </button>
         </h2>
         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the second item's accordion body.
+          <div class="accordion-body text-center mb-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto consequatur in ex facere illum laboriosam
+            reiciendis veritatis fugiat quibusdam nostrum aliquam nihil distinctio accusantium autem voluptates
+            voluptatibus tenetur, dolor tempora.
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header border-bottom border-3 border-accent">
-          <button class="accordion-button collapsed text-primary  justify-content-center" type="button"
+      <div class="accordion-item border-start border-end border-bottom border-2 border-accent">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed justify-content-center text-primary fw-bold" type="button"
             data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
             aria-controls="flush-collapseThree">
             GET COMPENSATION FOR YOUR INJURIES.
           </button>
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the third item's accordion body.
+          <div class="accordion-body text-center mb-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eligendi fuga mollitia officiis animi
+            unde sint suscipit, rem hic, nisi rerum ipsa nesciunt non quam earum tempora. Aspernatur, debitis odio.
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header border-bottom border-3 border-accent">
-          <button class="accordion-button collapsed text-primary  justify-content-center" type="button"
+      <div class="accordion-item border-start border-end border-bottom border-2 border-accent">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed justify-content-center text-primary fw-bold" type="button"
             data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
             aria-controls="flush-collapseFour">
             OUR MISSION IS YOUR SUCCESS
           </button>
         </h2>
         <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the fourth item's accordion body.
+          <div class="accordion-body text-center mb-3">
+            Placeholder Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel placeat inventore ipsum, debitis
+            reiciendis nobis voluptates dignissimos incidunt illo earum doloribus quibusdam labore ducimus praesentium?
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
 
 
-  <section class="attorney-section">
+  <section class="attorney-section position-relative z-1">
     <div class="row g-0 align-items-stretch">
 
       <div class="col-lg-5">
@@ -486,7 +512,6 @@
           <img src="/images/other/man1.webp" alt="Jack Morgan McGills" class="img-fluid w-100 h-100 object-fit-cover">
         </div>
       </div>
-
 
       <div class="col-lg-7 bg-right d-flex align-items-center">
         <div class="attorney-content px-5 py-4">
@@ -504,10 +529,10 @@
             <img src="/images/other/lawfirm3.svg" alt="icon2" height="50%">
           </div>
 
-
-          <a href="#" class="btn btn-outline-dark px-4 py-2">REQUEST AN APPOINTMENT</a>
+          <a href="#" class="btn btn-outline-dark px-4 py-2 mt-4">REQUEST AN APPOINTMENT</a>
         </div>
       </div>
+
     </div>
   </section>
 

@@ -4,6 +4,21 @@ $body-color: #ffffff;
 $heading-light: #f3ecec; 
 $heading-dark: #e4e5e7; 
 
+
+
+    h1,
+    h5,
+    .section-title,
+    .section-subtitle,
+    .hero-section h5,
+    .attorney-name,
+    .attorney-title,
+    .meeting-heading,
+    .interview-section h3,
+    .answer-section h1 {
+      font-family: 'Marcellus', serif !important;
+    }
+
 $custom_theme_colors: (
   "accent": $accent,
   "primary": $primary,
@@ -18,7 +33,7 @@ $custom-container-max-widths: (
 );
 
 
-$font-family-base: "Marcellus", Archivo;
+$font-family:'Marcellus', Archivo;
 $headings-color: #d4d1d1;
 $nav-link-font-weight: 400;
 
@@ -42,7 +57,8 @@ $spacers: (
   2: $spacer * 0.5,   
   3: $spacer,         
   4: $spacer * 1.5,   
-  5: $spacer * 3      
+  5: $spacer * 3,
+  6: $spacer * 4    
 );
 
 
