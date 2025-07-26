@@ -46,12 +46,12 @@
     margin-top: 2rem;
   }
 
-  // Optional: Light overlay for readability (you can remove this if not needed)
+  
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.85); // white overlay
+    background: rgba(255, 255, 255, 0.85); 
     z-index: -1;
   }
 }

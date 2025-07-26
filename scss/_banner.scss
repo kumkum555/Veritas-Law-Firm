@@ -9,7 +9,7 @@
   padding-left: 5%;
   background: url('/images/icone/signature.svg') no-repeat;
   background-size: 15%;
-  background-position: 10% 380px; // X (left), Y (top)
+  background-position: 10% 380px;
 
   .hero-bg {
     position: absolute;
@@ -106,9 +106,7 @@
   }
 }
 
-/* Responsive Media Queries */
 
-/* Tablet */
 @media (max-width: 992px) {
   .hero-section {
     padding-left: 3%;
@@ -133,7 +131,7 @@
   }
 }
 
-/* Mobile Landscape */
+
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;

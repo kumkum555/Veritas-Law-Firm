@@ -34,15 +34,15 @@ $h6-font-size: $font-size-base ;
 
 
 
-$spacer: 1rem; // Base unit (16px typically)
+$spacer: 1rem; 
 
 $spacers: (
   0: 0,
-  1: $spacer * 0.25,  // 0.25rem (4px)
-  2: $spacer * 0.5,   // 0.5rem (8px)
-  3: $spacer,         // 1rem (16px)
-  4: $spacer * 1.5,   // 1.5rem (24px)
-  5: $spacer * 3      // 3rem (48px)
+  1: $spacer * 0.25,  
+  2: $spacer * 0.5,   
+  3: $spacer,         
+  4: $spacer * 1.5,   
+  5: $spacer * 3      
 );
 
 
